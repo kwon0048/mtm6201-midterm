@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags for character encoding and browser compatibility -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the page -->
+    <title>EduXR Tech | Final Project</title>
+    <!-- Reset and main CSS stylesheets -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- Font Awesome kit for icons -->
+    <script src="https://kit.fontawesome.com/5f23fef3f2.js" crossorigin="anonymous"></script>
+    <!-- Preconnect and font link for Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--Accessibility Guidelines - Skip Links -->
+    <div class="skip-link-content">
+        <a href="#main-content" class="skip-link">Skip to Main Content 👇</a><br>
+        <a href="#footer" class="skip-link">Skip to Footer 👇</a>
+    </div>
+    <!-- Page header section -->
+    <header>
+        <div class="container nav-container">
+            <!-- Logo container -->
+            <div class="logo-container">
+                <a href="index.html"><img src="assets/imgs/logo.jpg" alt="logo" class="logo"></a>
+                <label for="hamburger" class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+            <!-- Navigation menu -->
+            <input type="checkbox" id="hamburger" class="hamburger-check">
+            <!--Accessibility Guidelines - Aria Roles -->
+            <nav class="menu" role="navigation" aria-label="Navigation">
+                <ul class="nav-list" role="list">
+                    <li><a aria-label="Go to Home Page" href="index.html">Home</a></li>
+                    <li><a aria-label="Go to About Page" href="about.html">About</a></li>
+                    <li><a aria-label="Go to Product Page" href="#product">Product</a></li>
+                    <li><a aria-label="Go to Service Page" href="#team">Service</a></li>
+                    <li><a aria-label="Go to Contact Page" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content" role="main">
+
+        <section id="about" class="about-section">
+            <div class="container clearfix">
+
+                <!-- News container -->
+                <div class="about-container">
+                    <h1 role="heading">About</h1>
+                    <p>Welcome to EduXR Tech, your ultimate destination for cutting-edge XR education solutions. We're
+                        here to bring a whole new level of excitement to your learning journey! <br>
+                        At EduXR Tech, we believe that education should be an unforgettable adventure. That's why we
+                        specialize in creating immersive experiences that blend the real world with the virtual. With
+                        our XR (Extended Reality) education products and services, we're on a mission to transform the
+                        way you learn, explore, and understand.</p><br>
+                </div>
+                <!-- News Image content -->
+                <div class="image-container">
+                    <picture>
+                        <!-- Desktop Sizes (Image)-->
+                        <source srcset="assets/imgs/building/building/building-1042_x_713.png 1x,
+                                        assets/imgs/building/building/building-2084_x_1426.png 2x"
+                            media="(min-width: 1080px)" />
+                        <!-- Mobile Sizes (Image) -->
+                        <source srcset="assets/imgs/building/building/building-521_x_356.png 1x,
+                                        assets/imgs/building/building/building-1042_x_713.png 2x"
+                            media="(max-width: 430px)" />
+                        <!-- Default fallback for unsupported browsers or small screens -->
+                        <img class="building-image" src="assets/imgs/building/building/building-521_x_356.png"
+                            alt="Our company's building">
+                    </picture>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Our Team -->
+        <section id="services" class="container">
+            <div class="team-section">
+                <h2 role="heading">Our Team</h2>
+                <!-- Team boxes -->
+                <div class="team-boxes">
+                    <!-- CEO box -->
+                    <div class="ceo-box">
+                        <picture>
+                            <!-- Desktop Sizes (Image)-->
+                            <source srcset="assets/imgs/team/ceo/ceo-826_x_720.png 1x,
+                            assets/imgs/team/ceo/ceo-1652_x_1440.png 2x" media="(min-width: 1080px)" />
+                            <!-- Mobile Sizes (Image) -->
+                            <source srcset="assets/imgs/team/ceo/ceo-413_x_360.png 1x,
+                                            assets/imgs/team/ceo/ceo-826_x_720.png 2x" media="(max-width: 430px)" />
+                            <!-- Default fallback for unsupported browsers or small screens -->
+                            <img src="assets/imgs/team/ceo/ceo-413_x_360.png"
+                                alt="A CEO is the top leader in a company, making key decisions and overseeing its success by setting direction and collaborating with other leaders.">
+                        </picture>
+                    </div>
+                    <!-- CFO box -->
+                    <div class="cfo-box">
+                        <picture>
+                            <!-- Desktop Sizes (Image)-->
+                            <source srcset="assets/imgs/team/cfo/cfo-826_x_720.png 1x,
+                                            assets/imgs/team/cfo/cfo-1652_x_1440.png 2x" media="(min-width: 1080px)" />
+                            <!-- Mobile Sizes (Image) -->
+                            <source srcset="assets/imgs/team/cfo/cfo-413_x_360.png 1x,
+                                            assets/imgs/team/cfo/cfo-826_x_720.png 2x" media="(max-width: 430px)" />
+
+                            <!-- Default fallback for unsupported browsers or small screens -->
+                            <img src="assets/imgs/team/cfo/cfo-413_x_360.png"
+                                alt="A CFO (Chief Financial Officer) manages a company's finances, overseeing budgeting and financial strategy for stability and success.">
+                        </picture>
+                    </div>
+                    <!-- CTO box -->
+                    <div class="cto-box">
+                        <picture>
+                            <!-- Desktop Sizes (Image)-->
+                            <source srcset="assets/imgs/team/cto/cto-826_x_720.png 1x,
+                                            assets/imgs/team/cto/cto-1652_x_1440.png 2x" media="(min-width: 1080px)" />
+                            <!-- Mobile Sizes (Image) -->
+                            <source srcset="assets/imgs/team/cto/cto-413_x_360.png 1x,
+                                            assets/imgs/team/cto/cto-826_x_720.png 2x" media="(max-width: 430px)" />
+                            <!-- Default fallback for unsupported browsers or small screens -->
+                            <img src="assets/imgs/team/cto/cto-413_x_360.png"
+                                alt="A CTO (Chief Technology Officer) leads a company's technology strategy, focusing on innovation and aligning technology with business objectives.">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <!-- Page footer section -->
+    <!--Accessibility Guidelines - Schema -->
+    <footer id="footer" role="contentinfo" itemscope itemtype="https://schema.org/WPFooter">
+        <div class="container">
+            <div class="footer-container">
+                <div class="social-media-icon"><img src="assets/imgs/fb-icon.png"
+                        alt="social media icon (facebook)"><img src="assets/imgs/twitter-icon.png"
+                        alt="social media icon (twitter)"><img src="assets/imgs/ig-icon.png"
+                        alt="social media icon (instagram)"></div>
+                <div class="footer-info">
+                    <div class="statement-info"><a href="#"><span class="privacy-span">Privacy & Policy</span></a> <a
+                            href="#"><span>Terms & Condition</span></a> </div>
+                    <div class="copy-right-icon" itemprop="copyrightHolder"> &copy; 2023 EduXR Tech. All rights reserved
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

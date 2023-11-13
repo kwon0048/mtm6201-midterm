@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags for character encoding and browser compatibility -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the page -->
+    <title>EduXR Tech | Final Project</title>
+    <!-- Reset and main CSS stylesheets -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- Font Awesome kit for icons -->
+    <script src="https://kit.fontawesome.com/5f23fef3f2.js" crossorigin="anonymous"></script>
+    <!-- Preconnect and font link for Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--Accessibility Guidelines - Skip Links -->
+    <div class="skip-link-content">
+        <a href="#main-content" class="skip-link">Skip to Main Content 👇</a><br>
+        <a href="#footer" class="skip-link">Skip to Footer 👇</a>
+    </div>
+
+    <!-- Page header section -->
+    <header>
+        <div class="container nav-container">
+            <!-- Logo container -->
+            <div class="logo-container">
+                <a href="index.html"><img src="assets/imgs/logo.jpg" alt="logo" class="logo"></a>
+                <label for="hamburger" class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+            <!-- Navigation menu -->
+            <input type="checkbox" id="hamburger" class="hamburger-check">
+            <!--Accessibility Guidelines - Aria Roles -->
+            <nav class="menu" role="navigation" aria-label="Navigation">
+                <ul class="nav-list" role="list">
+                    <li><a aria-label="Go to Home Page" href="index.html">Home</a></li>
+                    <li><a aria-label="Go to About Page" href="about.html">About</a></li>
+                    <li><a aria-label="Go to Product Page" href="#product">Product</a></li>
+                    <li><a aria-label="Go to Service Page" href="#team">Service</a></li>
+                    <li><a aria-label="Go to Contact Page" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content" role="main">
+
+        <section id="news" class="news-section">
+            <div class="container clearfix">
+
+                <!-- News container -->
+                <div class="news-container">
+                    <h1 role="heading">News</h1>
+                    <p>We're thrilled to share that EduXR Tech's fantastic VR educational product has taken a giant step
+                        forward! Now, it's not just friends with Meta Quest, HTC, and Pico VR headsets – it's also best
+                        buddies with the super-cool Apple Vision Pro headset. This means more fun and learning options
+                        for you! Imagine diving into virtual worlds to learn exciting subjects such as ancient
+                        civilizations, scientific breakthroughs, mathematical marvels, and even linguistic landscapes
+                        that take you on an exploration through time and ...</p>
+                    <button role="button" class="primary-button details-button">Details</button>
+                </div>
+                <!-- News Image content -->
+                <div class="image-container">
+                    <picture>
+                        <!-- Desktop Sizes (Image)-->
+                        <source srcset="assets/imgs/news/news/news-1042_x_713.jpg 1x,
+                                        assets/imgs/news/news/news-2084_x_1426.jpg 2x" media="(min-width: 1080px)" />
+                        <!-- Mobile Sizes (Image) -->
+                        <source srcset="assets/imgs/news/news/news-521_x_356.jpg 1x,
+                                        assets/imgs/news/news/news-1042_x_713.jpg 2x" media="(max-width: 430px)" />
+                        <!-- Default fallback for unsupported browsers or small screens -->
+                        <img src="assets/imgs/news/news/news-521_x_356.jpg" alt="news">
+                    </picture>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="container clearfix">
+                <h3 role="heading">Partners</h3>
+                <div class="social-media-logo">
+                    <img class="youtube-logo" src="assets/imgs/youtube-logo.png" alt=""> <img
+                        src="assets/imgs/facebook-logo.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- Statistic Section-->
+        <section id="statistics" class="container">
+            <div class="statistics-section">
+                <!-- statistic boxes -->
+                <div class="statistics-boxes">
+                    <!-- Client box -->
+                    <div class="clients-box">
+                        <h1 role="heading"><span class="client-data"></span>+</h1>
+                        <p>Clients</p>
+
+                    </div>
+                    <!-- User box -->
+                    <div class="users-box">
+                        <h1 role="heading">1M</h1>
+                        <p>Users</p>
+
+                    </div>
+                    <!-- Customer Satisfaction box -->
+                    <div class="customer-satisfaction">
+                        <h1 role="heading">+<span class="satisfaction-data"></span>%</h1>
+                        <p>Customer satisfaction</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Products / Services -->
+        <section id="services" class="container">
+            <div class="products-section">
+                <h2 role="heading">Products / Services</h2>
+                <!-- Service boxes -->
+                <div class="service-boxes">
+                    <!-- AR box -->
+                    <div class="ar-box">
+                        <picture>
+                            <!-- Desktop Sizes (Image)-->
+                            <source srcset="assets/imgs/products/ar/ar-826_x_720.jpg 1x,
+                                            assets/imgs/products/ar/ar-1652_x_1440.jpg 2x"
+                                media="(min-width: 1080px)" />
+                            <!-- Mobile Sizes (Image) -->
+                            <source srcset="assets/imgs/products/ar/ar-413_x_360.jpg 1x,
+                                            assets/imgs/products/ar/ar-826_x_720.jpg 2x" media="(max-width: 430px)" />
+                            <!-- Default fallback for unsupported browsers or small screens -->
+                            <img src="assets/imgs/products/ar/ar-413_x_360.jpg" alt="AR product">
+                        </picture>
+                    </div>
+                    <!-- VR box -->
+                    <div class="vr-box">
+                        <picture>
+                            <!-- Desktop Sizes (Image)-->
+                            <source srcset="assets/imgs/products/vr/vr-826_x_720.jpg 1x,
+                                            assets/imgs/products/vr/vr-1652_x_1440.jpg 2x"
+                                media="(min-width: 1080px)" />
+                            <!-- Mobile Sizes (Image) -->
+                            <source srcset="assets/imgs/products/vr/vr-413_x_360.jpg 1x,
+                                            assets/imgs/products/vr/vr-826_x_720.jpg 2x" media="(max-width: 430px)" />
+                            <!-- Default fallback for unsupported browsers or small screens -->
+                            <img src="assets/imgs/products/vr/vr-413_x_360.jpg" alt="vr product">
+                        </picture>
+                    </div>
+                    <!-- XR training course box -->
+                    <div class="xr-box">
+                        <picture>
+                            <!-- Desktop Sizes (Image)-->
+                            <source srcset="assets/imgs/products/xr/xr-826_x_720.jpg 1x,
+                                            assets/imgs/products/xr/xr-1652_x_1440.jpg 2x"
+                                media="(min-width: 1080px)" />
+                            <!-- Mobile Sizes (Image) -->
+                            <source srcset="assets/imgs/products/xr/xr-413_x_360.jpg 1x,
+                                            assets/imgs/products/xr/xr-826_x_720.jpg 2x" media="(max-width: 430px)" />
+                            <!-- Default fallback for unsupported browsers or small screens -->
+                            <img src="assets/imgs/products/xr/xr-413_x_360.jpg" alt="xr product">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <!-- Page footer section -->
+    <!--Accessibility Guidelines - Schema -->
+    <footer id="footer" role="contentinfo" itemscope itemtype="https://schema.org/WPFooter">
+        <div class="container">
+            <div class="footer-container">
+                <div class="social-media-icon"><img src="assets/imgs/fb-icon.png"
+                        alt="social media icon (facebook)"><img src="assets/imgs/twitter-icon.png"
+                        alt="social media icon (twitter)"><img src="assets/imgs/ig-icon.png"
+                        alt="social media icon (instagram)"></div>
+                <div class="footer-info">
+                    <div class="statement-info"><a href="#"><span class="privacy-span">Privacy & Policy</span></a> <a
+                            href="#"><span>Terms & Condition</span></a> </div>
+                    <div class="copy-right-icon" itemprop="copyrightHolder"> &copy; 2023 EduXR Tech. All rights reserved
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

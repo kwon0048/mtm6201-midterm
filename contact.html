@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags for character encoding and browser compatibility -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the page -->
+    <title>EduXR Tech | Final Project</title>
+    <!-- Reset and main CSS stylesheets -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- Font Awesome kit for icons -->
+    <script src="https://kit.fontawesome.com/5f23fef3f2.js" crossorigin="anonymous"></script>
+    <!-- Preconnect and font link for Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--Accessibility Guidelines - Skip Links -->
+    <div class="skip-link-content">
+        <a href="#main-content" class="skip-link">Skip to Main Content 👇</a><br>
+        <a href="#footer" class="skip-link">Skip to Footer 👇</a>
+    </div>
+    <!-- Page header section -->
+    <header>
+        <div class="container nav-container">
+            <!-- Logo container -->
+            <div class="logo-container">
+                <a href="index.html"><img src="assets/imgs/logo.jpg" alt="logo" class="logo"></a>
+                <label for="hamburger" class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+            <!-- Navigation menu -->
+            <input type="checkbox" id="hamburger" class="hamburger-check">
+            <!--Accessibility Guidelines - Aria Roles -->
+            <nav class="menu" role="navigation" aria-label="Navigation">
+                <ul class="nav-list" role="list">
+                    <li><a aria-label="Go to Home Page" href="index.html">Home</a></li>
+                    <li><a aria-label="Go to About Page" href="about.html">About</a></li>
+                    <li><a aria-label="Go to Product Page" href="#product">Product</a></li>
+                    <li><a aria-label="Go to Service Page" href="#team">Service</a></li>
+                    <li><a aria-label="Go to Contact Page" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content" role="main">
+
+
+
+        <!-- Statistic Section-->
+        <section id="contact" class="container">
+            <div class="contact-section">
+                <h1 role="heading">Contact</h1>
+                <!-- statistic boxes -->
+                <div class="contact-boxes">
+                    <!-- Client box -->
+                    <div class="contact-box">
+                        <img src="assets/imgs/contact.png" alt="Our company's phone number">
+                        <h3>+1 437 559 1123</h3>
+                    </div>
+                    <!-- User box -->
+                    <div class="email-box">
+                        <img src="assets/imgs/email.png" alt="Our company's email address">
+                        <h3>cs@eduxrtech.com</h3>
+                    </div>
+                    <!-- Customer Satisfaction box -->
+                    <div class="address-box">
+                        <img src="assets/imgs/location.png" alt="Our company's address">
+                        <h3>1385 Woodroffe Ave, Nepean, ON K2G 1V8</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Form Section-->
+        <section id="form" class="container">
+            <div class="form-section">
+                <form role="form" name="frmform" method="POST" action="form.php">
+                    <h2 role="heading">Form</h2>
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="8" placeholder="Message" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="submitbutton"></label>
+                        <button role="button" id="submitbutton" name="submitbutton"
+                            class="primary-button submit-button">Send</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Map Section-->
+        <!-- Utilize the <iframe> tag in HTML for embedding a Google Map. -->
+        <section id="mapform" class="container">
+            <div class="map-section">
+                <div class="contact-location">
+                    <h3 role="heading">Map</h3>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.9445518044936!2d-75.75712548465943!3d45.34993154908222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1szh-CN!2sca!4v1680820783604!5m2!1szh-CN!2sca"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Page footer section -->
+    <!--Accessibility Guidelines - Schema -->
+    <footer id="footer" role="contentinfo" itemscope itemtype="https://schema.org/WPFooter">
+        <div class="container">
+            <div class="footer-container">
+                <div class="social-media-icon"><img src="assets/imgs/fb-icon.png"
+                        alt="social media icon (facebook)"><img src="assets/imgs/twitter-icon.png"
+                        alt="social media icon (twitter)"><img src="assets/imgs/ig-icon.png"
+                        alt="social media icon (instagram)"></div>
+                <div class="footer-info">
+                    <div class="statement-info"><a href="#"><span class="privacy-span">Privacy & Policy</span></a> <a
+                            href="#"><span>Terms & Condition</span></a> </div>
+                    <div class="copy-right-icon" itemprop="copyrightHolder"> &copy; 2023 EduXR Tech. All rights reserved
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
